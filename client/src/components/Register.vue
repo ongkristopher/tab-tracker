@@ -22,7 +22,7 @@ export default {
     async register () {
       const response = await AuthenticationService.register({
         email: this.email,
-        password: this.pasword
+        password: this.password
       })
       console.log(response.data)
     }
