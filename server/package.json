@@ -1,28 +1,20 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Express backend server",
+  "main": "src/app.mjs",
   "scripts": {
-    "start": "nodemon src/app.js --exec \"npm run lint && node\"",
-    "lint": "eslint **/*.js"
+    "start": "NODE_ENV=production node src/app.mjs",
+    "dev": "nodemon src/app.mjs"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.20.1",
     "cors": "^2.8.5",
-    "express": "^4.18.2",
-    "morgan": "^1.10.0"
+    "express": "^5.1.0",
+    "morgan": "^1.10.1"
   },
   "devDependencies": {
-    "eslint": "^8.57.0",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.3.1",
-    "eslint-plugin-standard": "^5.0.0",
-    "nodemon": "^2.0.20"
+    "nodemon": "^3.1.10"
   }
 }
